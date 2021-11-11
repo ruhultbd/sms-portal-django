@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{title}} -  Gym Launch SMS Portal</title>
+
+        <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/png">
+
+        <link rel='stylesheet' href="{% static 'assets/css/font-awesome.min.4.7.0.css' %}" type='text/css'/>
+        <link rel="stylesheet" href="{% static 'assets/lib/bootstrap/css/bootstrap.min.css' %}" />
+
+        <link rel='stylesheet' href="{% static 'assets/css/styles.css' %} " type='text/css'/>
+        <link rel='stylesheet' href="{% static 'assets/css/custom.css' %} " type='text/css'/>
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" type="text/css"/>
+        <link rel="stylesheet" href="{% static 'assets/css/daterangepicker.css' %}" type="text/css"/>
+
+        <!--Datatable css-->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/dataTables/datatables.min.css' %}" />
+
+        <!-- Select 2 -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/select2/css/select2.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/select2/bs4/select2-bootstrap4.min.css' %}" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css' %}" />
+
+        <script type="text/javascript" src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/js/moment.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/js/daterangepicker.min.js' %}"></script>
+        <script type="text/javascript">
+            var baseurl = "{% url 'home' %}";
+        </script>
+    </head>
+
+    <header class="montserrat site-header mb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo-wrapper">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="site-logo">
+                                    <a href="https://prepro2-smsportal.protibimbo.com/" title="PrestigeLabs">
+                                        <img src="https://prepro2-smsportal.protibimbo.com/assets/images/logo.png" class="attachment-full size-full" alt="ALAN" title="ALAN"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="header-top">
+                                    <div class="top-widgets-right">
+                                                                                    <!--                                            <div class="textwidget roboto">
+                                                                                            <a href="https://prepro2-smsportal.protibimbo.com/auth/login">Login</a>
+                                                                                        </div>-->
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="site_menu">
+                <div class="header-logo-fix">
+                    <a href="https://prepro2-smsportal.protibimbo.com/"><img src="https://prepro2-smsportal.protibimbo.com/assets/images/logo_fix.png" alt="PrestigeLabs"/></a>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="primary-nav navbar-expand-lg">
+                                <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="menu-main-menu-container collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul id="menu-main-menu" class="menu navbar-nav" style="float:left;">
+                                                                                                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container min-height-550">
+
+
+        <div class="row">
+    <div class="col-md-12">
+        {% block content %}
+
+                {% endblock %}
+    </div>
+</div>    </div>
+    <!-- Start : Medium Modal -->
+    <div class="modal fade" id="md_view_model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="text-center"><img src="https://prepro2-smsportal.protibimbo.com/assets/images/loading-3.gif"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End : Medium Modal -->
+    <footer class="site-footer">
+        <aside class="footer-widgets col-xs-12">
+            <div class="container new-site-footer text-center">
+                <div class="stache"><img width="79" height="30" src="https://gymlaunch.com/wp-content/uploads/2019/01/Grey-Mustache.png" class="attachment-full size-full" alt=""></div>
+                <p class="mb-0">&copy; 2021 Gym Launch Secrets, LLC</p>
+                <div class="menu-site-info-container">
+                    <ul id="menu-site-info-1" class="inline mb-0">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 nav-item"><a title="Gym Launch Secrets Privacy Policy Notice" href="https://gymlaunch.com/privacy-policy/" class="nav-link">Gym Launch Secrets Privacy Policy Notice</a></li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332 nav-item"><a title="Gym Launch Terms of Use" href="https://gymlaunch.com/terms-of-use/" class="nav-link">Gym Launch Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="stache"><img width="79" height="30" src="https://gymlaunch.com/wp-content/uploads/2019/01/Grey-Mustache.png" class="attachment-full size-full" alt=""></div>
+            </div>
+        </aside>
+    </footer>
+    <div class="fullPageLoading" style="display: none">
+        <div class="loader">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>  Please Wait
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'assets/lib/dataTables/datatables.min.js' %}"></script>
+    <!-- select 2 -->
+    <script type="text/javascript" src="{% static 'assets/lib/select2/js/select2.full.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>
