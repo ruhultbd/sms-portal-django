@@ -1,8 +1,356 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="main_content" style="min-height: 350px">
-    <h1>Message Main Page</h1>
-</div>
+    <div class="row fsdfsdfsd">
+        <div class="col-md-12">
+            <main class="my_account">
+                <div class="funnel_header">
+                    <h3 class="pull-left montserrat page-title">Message</h3>
+                    <form class="pull-right funnel_seachbox" method="get" action="">
+                        <div class="cus-search-box">
+                            <select name="id" class="form-control search_box ajax_user_search"
+                                    placeholder="Select Distributor" data-role="2">
+                                <option value="" selected="selected">Select Distributor</option>
+                            </select>
 
+                        </div>
+
+                        <button type="submit" name="search" value="1" class="funnel_seach_btn">
+                            Search
+                        </button>
+                    </form>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="funnel_table_wrapper table-responsive">
+                    <table width="100%" class="table table-striped">
+                        <colgroup>
+                            <col width="15%">
+                            <col width="18%">
+                            <col width="35%">
+                            <col width="15%">
+                            <col width="10%">
+                            <col width="20%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>Distributor</th>
+                            <th>Contacts</th>
+                            <th>SMS Text</th>
+                            <th>Send / Received Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Jhon From Profile Smith - GLX</td>
+                            <td>
+                                Eduardo Test<br>
+                                <span class="text-muted">5012889730 (8)</span>
+                            </td>
+                            <td>Eduardo! Saw you just signed up for our ? - but I don't see you on my call schedule.
+                                Would you be up for a 5 min chat to see if the program is a good fit? Btw my name is .
+                            </td>
+                            <td>Nov 3 2021, 07:30am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574532"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Jesse Test<br>
+                                <span class="text-muted">+15053090549 (18)</span>
+                            </td>
+                            <td>here</td>
+                            <td>Nov 1 2021, 11:20am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Received</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574531"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Edu Conte<br>
+                                <span class="text-muted">5012889730 (66)</span>
+                            </td>
+                            <td>Also - text me "ready" when you get to a quiet spot so I don't disturb you. Can't wait
+                                to chat in about 30 mins!
+                            </td>
+                            <td>Oct 29 2021, 05:51am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574530"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Test <br>
+                                <span class="text-muted">234242432234 (14)</span>
+                            </td>
+                            <td>Test - My evenings are pretty free this week, have any time to connect for a video
+                                call?
+                            </td>
+                            <td>Oct 5 2021, 02:21am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574527"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon From Profile Smith - GLX</td>
+                            <td>
+                                Test <br>
+                                <span class="text-muted">234242432234 (10)</span>
+                            </td>
+                            <td>Test - just throwing this out there - no pressure. 2 spots in our virtual (at-home)
+                                coaching program just opened up - wondering if you want to take their place?
+                            </td>
+                            <td>Oct 5 2021, 02:21am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574528"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Test Lead<br>
+                                <span class="text-muted">8801713016697 (24)</span>
+                            </td>
+                            <td>New Message 12</td>
+                            <td>Aug 26 2021, 01:42am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Received</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574525"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Farhad Hossain<br>
+                                <span class="text-muted">8801717016697 (16)</span>
+                            </td>
+                            <td>Hey Farhad - how's life treating you?</td>
+                            <td>Aug 25 2021, 11:23pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574524"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Test McTesterson<br>
+                                <span class="text-muted">5055504060 (18)</span>
+                            </td>
+                            <td>Hi</td>
+                            <td>Aug 24 2021, 03:59pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574523"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Tester Test<br>
+                                <span class="text-muted">5057502669 (11)</span>
+                            </td>
+                            <td>Tester - just throwing this out there - no pressure. 2 spots in our virtual (at-home)
+                                coaching program just opened up - wondering if you want to take their place?
+                            </td>
+                            <td>Aug 24 2021, 03:57pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574522"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01222021EU Test</td>
+                            <td>
+                                Jesse Test<br>
+                                <span class="text-muted">5056750523 (26)</span>
+                            </td>
+                            <td>hello</td>
+                            <td>Aug 24 2021, 03:48pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574521"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon From Profile Smith - GLX</td>
+                            <td>
+                                Whitney York<br>
+                                <span class="text-muted">11394616975 (10)</span>
+                            </td>
+                            <td>Whitney - just throwing this out there - no pressure. 2 spots in our virtual (at-home)
+                                coaching program just opened up - wondering if you want to take their place?
+                            </td>
+                            <td>Aug 23 2021, 09:59pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574520"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Whitney York<br>
+                                <span class="text-muted">11394616975 (18)</span>
+                            </td>
+                            <td>Whitney - you signed up for our 5. In case that sounded intimidating, want to just chat
+                                and see how we can help?
+                            </td>
+                            <td>Aug 23 2021, 09:59pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574519"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Ina Higgins<br>
+                                <span class="text-muted">17426764669 (18)</span>
+                            </td>
+                            <td>Ina - you signed up for our 5. In case that sounded intimidating, want to just chat and
+                                see how we can help?
+                            </td>
+                            <td>Aug 23 2021, 09:41pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574517"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon From Profile Smith - GLX</td>
+                            <td>
+                                Ina Higgins<br>
+                                <span class="text-muted">17426764669 (10)</span>
+                            </td>
+                            <td>Ina - just throwing this out there - no pressure. 2 spots in our virtual (at-home)
+                                coaching program just opened up - wondering if you want to take their place?
+                            </td>
+                            <td>Aug 23 2021, 09:41pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574518"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon From Profile Smith - GLX</td>
+                            <td>
+                                Cameron Petersen<br>
+                                <span class="text-muted">16492796177 (10)</span>
+                            </td>
+                            <td>Cameron - just throwing this out there - no pressure. 2 spots in our virtual (at-home)
+                                coaching program just opened up - wondering if you want to take their place?
+                            </td>
+                            <td>Aug 23 2021, 01:04pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574516"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Cameron Petersen<br>
+                                <span class="text-muted">16492796177 (18)</span>
+                            </td>
+                            <td>Cameron - you signed up for our 5. In case that sounded intimidating, want to just chat
+                                and see how we can help?
+                            </td>
+                            <td>Aug 23 2021, 01:04pm</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574515"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Nathan Blackwell<br>
+                                <span class="text-muted">12864859397 (18)</span>
+                            </td>
+                            <td>Nathan - you signed up for our 5. In case that sounded intimidating, want to just chat
+                                and see how we can help?
+                            </td>
+                            <td>Aug 13 2021, 04:51am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574514"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Richard Odonnell<br>
+                                <span class="text-muted">13164928862 (18)</span>
+                            </td>
+                            <td>Richard - you signed up for our 5. In case that sounded intimidating, want to just chat
+                                and see how we can help?
+                            </td>
+                            <td>Aug 13 2021, 03:20am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574513"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Mahmudul Islam Prakash<br>
+                                <span class="text-muted">12345678889 (18)</span>
+                            </td>
+                            <td>Mahmudul - you signed up for our 5. In case that sounded intimidating, want to just chat
+                                and see how we can help?
+                            </td>
+                            <td>Aug 13 2021, 01:37am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574512"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        <tr>
+                            <td>01252021test test</td>
+                            <td>
+                                Farhad Hossain<br>
+                                <span class="text-muted">01717016697 (30)</span>
+                            </td>
+                            <td>Farhad - you signed up for our 5. In case that sounded intimidating, want to just chat
+                                and see how we can help?
+                            </td>
+                            <td>Aug 13 2021, 01:36am</td>
+                            <td class="text-center"><span class="badge badge-success statusBadge">Sent</span></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/message/activity/574511"
+                                    class="funnel_cus_btn roboto_condensed">Activity</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                            <li class="page-item"><a href="https://prepro2-smsportal.protibimbo.com/message?page=2"
+                                                     class="page-link" data-ci-pagination-page="2">2</a></li>
+                            <li class="page-item"><a href="https://prepro2-smsportal.protibimbo.com/message?page=3"
+                                                     class="page-link" data-ci-pagination-page="3">3</a></li>
+                            <li class="page-item"><a href="https://prepro2-smsportal.protibimbo.com/message?page=2"
+                                                     class="page-link" data-ci-pagination-page="2" rel="next"><i
+                                    class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li class="page-item"><a href="https://prepro2-smsportal.protibimbo.com/message?page=9"
+                                                     class="page-link" data-ci-pagination-page="9"><i
+                                    class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </main>
+        </div>
+    </div>
 {% endblock  %}
