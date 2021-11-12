@@ -1,0 +1,580 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row fsdfsdfsd">
+        <div class="col-md-12">
+            <main class="my_account">
+                <div class="funnel_header">
+                    <h3 class="pull-left montserrat page-title">Universal Message Rule Categories</h3>
+                    <div class="pull-right pr-1 pb-3 pb-lg-0">
+                        <a href="https://prepro2-smsportal.protibimbo.com/campaigns/create_category_view"
+                           class="funnel_cus_btn roboto_condensed funnel-setting-btn text-info" data-toggle="modal"
+                           data-target="#md_view_model">Add Universal Message Rule Category</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="funnel_table_wrapper table-responsive">
+                    <table width="100%" class="table table-striped" id="data-table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th class="text-center">Expression Count</th>
+                            <th class="text-center">Added By</th>
+                            <th class="text-center">Added</th>
+                            <th class="text-center no-sort"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/2">Yes</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/2">67</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:01pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/2"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/2"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/3">No</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/3">53</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:01pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/3"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/3"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/5">Address</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/5">95</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:01pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/5"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/5"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/6">Childcare</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/6">13</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:03pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/6"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/6"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/7">Hours</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/7">41</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:03pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/7"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/7"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/8">Price
+                                Information</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/8">36</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:03pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/8"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/8"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/9">Age
+                                Requirements</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/9">22</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:03pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/9"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/9"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/10">Type of
+                                Workouts</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/10">10</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:04pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/10"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/10"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/11">Start
+                                Information</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/11">9</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:05pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/11"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/11"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/12">Parking
+                                Information</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/12">3</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:05pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/12"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/12"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/13">Unsubscribe</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/13">248</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:05pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/13"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/13"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/14">Confirmation</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/14">30</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:06pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/14"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/14"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/17">Cancel</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/17">84</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:07pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/17"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/17"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/19">Reschedule</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/19">18</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:07pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/19"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/19"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/20">Weight
+                                Loss</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/20">14</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:07pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/20"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/20"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/21">Toning</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/21">5</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:08pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/21"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/21"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/22">Build
+                                Muscle</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/22">8</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:08pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/22"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/22"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/23">Both</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/23">2</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 14 2019, 10:08pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/23"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/23"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/24">Orientation
+                                Information</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/24">36</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 15 2019, 12:22pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/24"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/24"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/25">Live
+                                Person</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/25">25</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 15 2019, 12:44pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/25"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/25"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/26">Here</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/26">34</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 17 2019, 12:10pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/26"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/26"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/28">Remove -
+                                Schedule Campaigns Only</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/28">74</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 24 2019, 06:52pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/28"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/28"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/29">Gym
+                                Name</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/29">4</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 24 2019, 08:42pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/29"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/29"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/30">Gym
+                                Owner Name</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/30">5</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 24 2019, 08:43pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/30"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/30"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/31">Next
+                                Week</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/31">1</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Oct 24 2019, 08:48pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/31"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/31"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/33">General
+                                Replies</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/33">2</a>
+                            </td>
+                            <td class="text-center">Productadmin Development</td>
+                            <td class="text-center">Mar 10 2020, 01:15pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/33"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/33"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/34">Ready</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/34">6</a>
+                            </td>
+                            <td class="text-center">Jesse Jackson - Admin</td>
+                            <td class="text-center">Mar 18 2020, 03:07pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/34"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/34"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/35">Phone
+                                Number</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/35">4</a>
+                            </td>
+                            <td class="text-center">Jesse Jackson - Admin</td>
+                            <td class="text-center">May 5 2020, 01:42pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/35"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/35"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/36">Zoom
+                                Link</a></td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/36">4</a>
+                            </td>
+                            <td class="text-center">Jesse Jackson - Admin</td>
+                            <td class="text-center">May 5 2020, 01:44pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/36"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/36"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td><a href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/37">mattress_size</a>
+                            </td>
+                            <td class="text-center"><a
+                                    href="https://prepro2-smsportal.protibimbo.com/campaigns/expression_list/37">6</a>
+                            </td>
+                            <td class="text-center">Jesse Jackson - Admin</td>
+                            <td class="text-center">Sep 14 2020, 03:30pm</td>
+                            <td class="text-center">
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/edit_category_view/37"
+                                   class="roboto_condensed funnel-setting-btn pr-1" data-toggle="modal"
+                                   data-target="#md_view_model"><i class="fa fa-pencil"></i></a>
+                                <a href="https://prepro2-smsportal.protibimbo.com/campaigns/delete_category/37"
+                                   onclick="return confirm('Are you sure you want to delete permanently?')"
+                                   class="text-danger roboto_condensed"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+{% endblock  %}

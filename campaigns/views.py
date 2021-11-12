@@ -6,3 +6,8 @@ class MainView(LoginRequiredMixin, View):
     def get(self, request):
         context = {'title': 'Campaigns', 'active_nav':'campaigns'}
         return render(request, 'campaigns/index.html', context)
+
+class CategoryView(LoginRequiredMixin, View):
+    def get(self, request):
+        context = {'title': 'Campaigns', 'active_nav':'campaigns'}
+        return render(request, 'campaigns/category.html', context)
