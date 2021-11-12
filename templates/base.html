@@ -2,440 +2,203 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{title}} -  Gym Launch SMS Portal</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} - Gym Launch SMS Portal</title>
 
-        <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/png">
 
-        <link rel='stylesheet' href="{% static 'assets/css/font-awesome.min.4.7.0.css' %}" type='text/css'/>
-        <link rel="stylesheet" href="{% static 'assets/lib/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel='stylesheet' href="{% static 'assets/css/font-awesome.min.4.7.0.css' %}" type='text/css'/>
+    <link rel="stylesheet" href="{% static 'assets/lib/bootstrap/css/bootstrap.min.css' %}"/>
 
-        <link rel='stylesheet' href="{% static 'assets/css/styles.css' %} " type='text/css'/>
-        <link rel='stylesheet' href="{% static 'assets/css/custom.css' %} " type='text/css'/>
-        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" type="text/css"/>
-        <link rel="stylesheet" href="{% static 'assets/css/daterangepicker.css' %}" type="text/css"/>
+    <link rel='stylesheet' href="{% static 'assets/css/styles.css' %} " type='text/css'/>
+    <link rel='stylesheet' href="{% static 'assets/css/custom.css' %} " type='text/css'/>
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'assets/css/daterangepicker.css' %}" type="text/css"/>
 
-        <!--Datatable css-->
-        <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/dataTables/datatables.min.css' %}" />
+    <!--Datatable css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/dataTables/datatables.min.css' %}"/>
 
-        <!-- Select 2 -->
-        <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/select2/css/select2.min.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/select2/bs4/select2-bootstrap4.min.css' %}" />
+    <!-- Select 2 -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/select2/css/select2.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/lib/select2/bs4/select2-bootstrap4.min.css' %}"/>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css' %}" />
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css' %}"/>-->
 
-        <script type="text/javascript" src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'assets/lib/bootstrap/js/bootstrap.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'assets/js/moment.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'assets/js/daterangepicker.min.js' %}"></script>
-        <script type="text/javascript">
+    <script type="text/javascript" src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/moment.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/daterangepicker.min.js' %}"></script>
+    <script type="text/javascript">
             var baseurl = "{% url 'home' %}";
-        </script>
-    </head>
 
-    <header class="montserrat site-header mb-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo-wrapper">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="site-logo">
-                                    <a href="{% url 'home' %}" title="PrestigeLabs">
-                                        <img src="https://prepro2-smsportal.protibimbo.com/assets/images/logo.png" class="attachment-full size-full" alt="ALAN" title="ALAN"/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="header-top">
-                                    <div class="top-widgets-right">
-                                                                                    <div class="textwidget roboto">
-                                                <div class="">
-                                                    Welcome <strong>Technobd</strong>
-                                                    | <a href="https://prepro2-smsportal.protibimbo.com/auth/change_password">Change Password</a>
-                                                    | <a href="https://prepro2-smsportal.protibimbo.com/auth/logout">Logout</a>
-                                                </div>
-                                                <div class="top-widgets-date-time">
-                                                    Thursday, November 11, 2021 03:05:34 am(UTC-7)
-                                                </div>
-                                            </div>
-                                                                            </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </script>
+</head>
 
-        <section>
-            <div class="site_menu">
-                <div class="header-logo-fix">
-                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo_fix.png' %}" alt="PrestigeLabs"/></a>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav class="primary-nav navbar-expand-lg">
-                                <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="menu-main-menu-container collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul id="menu-main-menu" class="menu navbar-nav" style="float:left;">
-                                        <li class="active"><a class="menu_item" href="https://prepro2-smsportal.protibimbo.com/user/dashboard">Dashboard</a></li>
-                                        <li class=""><a class="menu_item showLoading" href="https://prepro2-smsportal.protibimbo.com/user/funnels">Funnels</a></li>
-                                            <!--                                                 <li class=""><a class="menu_item showLoading" href="https://prepro2-smsportal.protibimbo.com/campaigns/default">Default Campaigns</a></li>
-                                             -->
-                                            <li class=" has-menu"><a class="menu_item showLoading" href="https://prepro2-smsportal.protibimbo.com/campaigns/categorytree">Campaigns</a>
-                                                <div class="child-menu">
-                                                    <ul class="child-menu-list">
-                                                        <!-- <li><a class="showLoading" href="https://prepro2-smsportal.protibimbo.com/campaigns">Campaigns</a></li> -->
-                                                                                                                    <!-- <li><a href="https://prepro2-smsportal.protibimbo.com/campaigns/new">Add Campaign</a></li> -->
-                                                            <li><a href="https://prepro2-smsportal.protibimbo.com/campaigns/category">Universal Message Rules</a></li>
-                                                            <li><a href="https://prepro2-smsportal.protibimbo.com/campaigns/categorytree">Manage Campaign Tree</a></li>
-                                                                                                            </ul>
-                                                </div>
-                                            </li>
-                                            <li class=""><a class="menu_item showLoading" href="https://prepro2-smsportal.protibimbo.com/message">Message</a></li>
-                                            <li class=" has-menu"><a class="menu_item showLoading" href="https://prepro2-smsportal.protibimbo.com/user/settings">Settings</a>
-                                                                                                    <div class="child-menu">
-                                                        <ul class="child-menu-list">
-                                                            <li><a class="showLoading" href="https://prepro2-smsportal.protibimbo.com/user/settings">General</a></li>
-                                                            <li><a class="showLoading" href="https://prepro2-smsportal.protibimbo.com/user/campaignsettings">Campaign Trigger</a></li>
-                                                        </ul>
-                                                    </div>
-                                                                                            </li>
-                                                                                            <li class=""><a class="menu_item showLoading" href="https://prepro2-smsportal.protibimbo.com/customfield/manage_default">Custom Fields</a></li>
-                                                                                                                        </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-
-    <div class="container min-height-550">
-
-
+<header class="montserrat site-header mb-2">
+    <div class="container">
         <div class="row">
-    <div class="col-md-12">
-        <main class="my_account">
-            <h3 class="montserrat page-title">Dashboard</h3>
-        </main>
-    </div>
-</div>
-<div class="main_content" style="min-height: 350px">
-            <div class="row montserrat">
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-users" aria-hidden="true"></i>
+            <div class="col-md-12">
+                <div class="logo-wrapper">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="site-logo">
+                                <a href="{% url 'home' %}" title="PrestigeLabs">
+                                    <img src="{% static 'assets/images/prestigelabs-logo.png' %}"
+                                         class="attachment-full size-full" alt="ALAN" title="ALAN"/>
+                                </a>
+                            </div>
                         </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>2415</h3>
-                            <span>Gym Owner </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-left text-right smsCardActive">
-                            Active : 643                        </div>
-                        <div class="pull-right text-right smsCardInactive">
-                            Inactive : 271                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                        <div class="col-md-8">
+                            <div class="header-top">
+                                <div class="top-widgets-right">
+                                    <div class="textwidget roboto">
+                                        <div class="">
+                                            Welcome <strong>{{user.username}}</strong>
+                                            | <a href="{% url 'password_change' %}">Change Password</a>
+                                            | <a href="{% url 'logout' %}">Logout</a>
+                                        </div>
+                                        <div class="top-widgets-date-time">
+                                            {% now "l, F d Y H:i:s a" %}
 
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-filter" aria-hidden="true"></i>
+<!--                                            Thursday, November 11, 2021 03:05:34 am(UTC-7)-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>478</h3>
-                            <span>Funnels </span>
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-left text-right smsCardActive">
-                            All Gym Owner
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>2319</h3>
-                            <span>Campaigns </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-left text-right smsCardActive">
-                            All Gym Owner
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="clearfix"></div>
-
-        <div class="dashboard-data-search-filter">
-            <form action="https://prepro2-smsportal.protibimbo.com/" method="get" style="width: 100%;">
+    <section>
+        <div class="site_menu">
+            <div class="header-logo-fix">
+                <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo_fix.png' %}" alt="PrestigeLabs"/></a>
+            </div>
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <select name="gym_owner_id" id="gym_owner_id" class="form-control search_field ajax_user_search" data-role="2" style="width: 100%;display: inline-block">
-                            <option value="">Select Gym Owner</option>                        </select>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="daterange bt-date-field dashboard-daterange bt-date-field">
-                            <i class="glyphicon glyphicon-calendar fa fa-calendar fa-fw"></i>&nbsp;
-                            <span></span><b class="caret"></b>
-                            <input type="hidden" name="date_range">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="row montserrat">
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-address-book" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>2</h3>
-                            <span>Leads </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-left text-right smsCardActive">
-                            # of Leads
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>0</h3>
-                            <span>Scheduled </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-right text-right smsCardInactive">
-                            Lead > Scheduled : <span class="dashboard_percent">0%</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>0</h3>
-                            <span>Past Scheduled </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-right text-right smsCardInactive">
-                            % Past Scheduled : <span class="dashboard_percent">0%</span>
-                        </div>
-                        <div class="clearfix"></div>
+                    <div class="col-md-12">
+                        <nav class="primary-nav navbar-expand-lg">
+                            <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="menu-main-menu-container collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul id="menu-main-menu" class="menu navbar-nav" style="float:left;">
+                                    <li class="{% if active_nav == 'home' %} active {% endif %}">
+                                        <a class="menu_item" href="{% url 'home' %}">Dashboard</a>
+                                    </li>
+                                    <li class="{% if active_nav == 'funnels' %} active {% endif %}">
+                                        <a class="menu_item showLoading" href="{% url 'funnels' %}">Funnels</a>
+                                    </li>
+                                    <li class="{% if active_nav == 'campaigns' %} active {% endif %} has-menu">
+                                        <a class="menu_item showLoading" href="{% url 'campaigns' %}">Campaigns</a>
+                                        <div class="child-menu">
+                                            <ul class="child-menu-list">
+                                                <!-- <li><a class="showLoading" href="https://prepro2-smsportal.protibimbo.com/campaigns">Campaigns</a></li> -->
+                                                <!-- <li><a href="https://prepro2-smsportal.protibimbo.com/campaigns/new">Add Campaign</a></li> -->
+                                                <li>
+                                                    <a href="javascript:void(0)">Universal Message Rules</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">Manage Campaign Tree</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="{% if active_nav == 'message' %} active {% endif %}">
+                                        <a class="menu_item showLoading" href="{% url 'message' %}">Message</a>
+                                    </li>
+                                    <li class="{% if active_nav == 'settings' %} active {% endif %} has-menu">
+                                        <a class="menu_item showLoading" href="{% url 'settings' %}">Settings</a>
+                                        <div class="child-menu">
+                                            <ul class="child-menu-list">
+                                                <li>
+                                                    <a class="showLoading" href="javascript:void(0)">General</a>
+                                                </li>
+                                                <li>
+                                                    <a class="showLoading" href="javascript:void(0)">Campaign Trigger</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="{% if active_nav == 'custom-fields' %} active {% endif %}">
+                                        <a class="menu_item showLoading" href="{% url 'custom-fields' %}">Custom Fields</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="clearfix"></div>
+    </section>
+</header>
 
-        <div class="row montserrat">
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>0</h3>
-                            <span>Showed </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-right text-right smsCardInactive">
-                            Past Scheduled > Showed : <span class="dashboard_percent">0%</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>0</h3>
-                            <span>Confirmed </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-right text-right smsCardInactive">
-                            Past Scheduled > Confirmed : <span class="dashboard_percent">0%</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-address-book" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>0</h3>
-                            <span>Sold </span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-right text-right smsCardInactive">
-                            Showed > Sold : <span class="dashboard_percent">0%</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="smsCard">
-                    <div class="smsCardheader">
-                        <div class="pull-left smsCardheaderImg">
-                            <i class="fa fa-money" aria-hidden="true"></i>
-                        </div>
-                        <div class="pull-right text-right smsCardheaderCtg">
-                            <h3>0</h3>
-                            <span>Amount</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="smsCardStatus">
-                        <div class="pull-left text-right smsCardActive">
-                            Amount Down : 0<br>
-                            Contract Value : 0                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
+<div class="container min-height-550">
+    <div class="row">
+        <div class="col-md-12">
+            <main class="my_account">
+                <h3 class="montserrat page-title">{{ title }}</h3>
+            </main>
         </div>
     </div>
 
-<script type="text/javascript">
-    // date range picker
-    var start = moment('2021-11-1', 'YYYY-MM-DD');
-    var end = moment('2021-11-30', 'YYYY-MM-DD');
+    {% block content %}
 
-    $('.daterange').daterangepicker({
-        startDate: start,
-        endDate: end,
-        opens: "left",
-        ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        }
-    }, cb);
+    {% endblock %}
 
-    cb(start, end);
-
-    $('.daterange').on('apply.daterangepicker', function (ev, picker) {
-        $('form').submit();
-    });
-
-    $(document).ready(function () {
-        $('select[name=gym_owner_id]').on('change', function () {
-            $('form').submit();
-        });
-    });
-
-    function cb(start, end) {
-        $('.daterange span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
-        $('.daterange input').val(start.format('YYYY-MM-DD') + ',' + end.format('YYYY-MM-DD'));
-    }
-</script>    </div>
     <!-- Start : Medium Modal -->
-    <div class="modal fade" id="md_view_model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="md_view_model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="text-center"><img src="https://prepro2-smsportal.protibimbo.com/assets/images/loading-3.gif"></div>
+                <div class="text-center"><img
+                        src="https://prepro2-smsportal.protibimbo.com/assets/images/loading-3.gif"></div>
             </div>
         </div>
     </div>
+</div>
     <!-- End : Medium Modal -->
     <footer class="site-footer">
         <aside class="footer-widgets col-xs-12">
             <div class="container new-site-footer text-center">
-                <div class="stache"><img width="79" height="30" src="https://gymlaunch.com/wp-content/uploads/2019/01/Grey-Mustache.png" class="attachment-full size-full" alt=""></div>
+                <div class="stache"><img width="79" height="30"
+                                         src="https://gymlaunch.com/wp-content/uploads/2019/01/Grey-Mustache.png"
+                                         class="attachment-full size-full" alt=""></div>
                 <p class="mb-0">&copy; 2021 Gym Launch Secrets, LLC</p>
                 <div class="menu-site-info-container">
                     <ul id="menu-site-info-1" class="inline mb-0">
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 nav-item"><a title="Gym Launch Secrets Privacy Policy Notice" href="javascript:void(0)" class="nav-link">Gym Launch Secrets Privacy Policy Notice</a></li>
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332 nav-item"><a title="Gym Launch Terms of Use" href="javascript:void(0)" class="nav-link">Gym Launch Terms of Use</a></li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 nav-item"><a
+                                title="Gym Launch Secrets Privacy Policy Notice" href="javascript:void(0)"
+                                class="nav-link">Gym Launch Secrets Privacy Policy Notice</a></li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332 nav-item"><a
+                                title="Gym Launch Terms of Use" href="javascript:void(0)" class="nav-link">Gym Launch
+                            Terms of Use</a></li>
                     </ul>
                 </div>
-                <div class="stache"><img width="79" height="30" src="https://gymlaunch.com/wp-content/uploads/2019/01/Grey-Mustache.png" class="attachment-full size-full" alt=""></div>
+                <div class="stache"><img width="79" height="30"
+                                         src="https://gymlaunch.com/wp-content/uploads/2019/01/Grey-Mustache.png"
+                                         class="attachment-full size-full" alt=""></div>
             </div>
         </aside>
     </footer>
     <div class="fullPageLoading" style="display: none">
         <div class="loader">
-            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>  Please Wait
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i> Please Wait
         </div>
     </div>
     <script type="text/javascript" src="{% static 'assets/lib/dataTables/datatables.min.js' %}"></script>
     <!-- select 2 -->
     <script type="text/javascript" src="{% static 'assets/lib/select2/js/select2.full.min.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>-->
     <script type="text/javascript" src="{% static 'assets/js/script.js' %}"></script>
-</body>
+    </body>
 </html>

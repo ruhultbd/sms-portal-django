@@ -5,8 +5,8 @@ from django.http import HttpResponse
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class DashboardView(LoginRequiredMixin, View):
+class MainView(LoginRequiredMixin, View):
     def get(self, request):
-        context = {'title': 'Dashboard'}
+        context = {'title': 'Dashboard', 'active_nav': 'home'}
         return render(request, 'dashboard/index.html', context)
 
