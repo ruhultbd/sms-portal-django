@@ -12,6 +12,9 @@ class Category(models.Model):
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return f"{self.name}"
+
 
 class Customfield(models.Model):
     class FieldType(models.TextChoices):
