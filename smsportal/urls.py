@@ -13,5 +13,5 @@ urlpatterns = [
     path('funnels', include('funnels.urls')),
     path('message', include('message.urls')),
     path('settings', include('settings.urls')),
-    path('customfields', include('customfields.urls')),
+    path('customfields/', include('customfields.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
